@@ -2,7 +2,7 @@
 	"name": "scrcpy-r",
 	"displayName": "scrcpy record",
 	"description": "Records Android screen with scrcpy",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.98.0"
 	},
@@ -38,6 +38,10 @@
 				}
 			]
 		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VojtaMaiwald/scrcpy-r.git"
 	},
 	"scripts": {
 		"lint": "eslint .",

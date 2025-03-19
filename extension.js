@@ -10,28 +10,6 @@ function activate(context) {
 	});
 
 	context.subscriptions.push(disposable);
-	// Create a simple webview
-	const panel = vscode.window.createWebviewPanel(
-		'scrcpyRecording', // Identifies the type of the webview
-		'Scrcpy Recording', // Title of the webview
-		vscode.ViewColumn.One, // Editor column to display the webview
-		{
-			enableScripts: true,
-			localResourceRoots: [vscode.Uri.joinPath(context.extensionUri, 'media')]
-		}
-	);
-	panel.webview.html = getWebviewContent();
-}
-
-function getWebviewContent() {
-	return `
-        <html>
-            <body>
-                <h1>Scrcpy Recording</h1>
-                <p>Recording in progress...</p>
-            </body>
-        </html>
-    `;
 }
 
 function deactivate() { }
